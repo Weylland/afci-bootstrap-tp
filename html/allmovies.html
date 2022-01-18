@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tp Bootsrap</title>
+  <title>Moovy - Tout les Films</title>
   <!-- CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -116,7 +116,8 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-lg-3">
+      <!-- List genres -->
+      <div class="col-lg-3 d-none d-lg-block">
         <ul class="list-group list-group-flush border border-info p-2">
           <li class="list-group-item bg-dark text-white">
             <input class="form-check-input me-1" type="checkbox" value="" aria-label="...">
@@ -192,13 +193,94 @@
           </li>
         </ul>
       </div>
+      <!-- list genre dropdown -->
+      <div class="dropdown my-5 d-lg-none">
+        <button class="btn btn-info dropdown-toggle w-100" type="button" id="dropdownMenu2" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Genres
+        </button>
+        <ul class="dropdown-menu bg-dark w-100" aria-labelledby="dropdownMenu2">
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Action
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Animation
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Aventure
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Biopic
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Comédie
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Comédie dramatique
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Drame
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Epouvante-horreur
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Famille
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Fantastique
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Guerre
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Historique
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Musical
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Policier
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Romance
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Science Fiction
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Thriller
+          </li>
+          <li class="dropdown-item bg-dark text-white m-1">
+            <input class="form-check-input" type="checkbox" value="" aria-label="...">
+            Western
+          </li>
+        </ul>
+      </div>
       <div class="col-lg-9">
-        <div class="row ps-5">
-          <div class="col">
+        <div class="">
+          <div class="col-12">
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/adieumonsieurhaffmann.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -214,9 +296,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/scream.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -232,9 +314,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/place.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -250,9 +332,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/enattendantbojangles.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -268,9 +350,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/ouisreham.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -285,9 +367,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/kingsmans.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -302,9 +384,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/spidermann.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -320,9 +402,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/nightmarealley.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -338,9 +420,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/thechef.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -356,9 +438,9 @@
               </div>
             </a>
             <a href="./article.html" class="text-decoration-none" target="_blank">
-              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info" style="max-width: 60%;">
+              <div class="card mb-3 pb-3 bg-dark text-white border-0 border-bottom border-info">
                 <div class="row g-0">
-                  <div class="col">
+                  <div class="col-md-4 text-center">
                     <img src="../assets/img/laplaceduneautre.jpg" class="img-fluid" alt="...">
                   </div>
                   <div class="col-md-8">
@@ -387,7 +469,7 @@
       </div>
       <div class="col-lg-4 d-flex flex-column  align-items-center">
         <h3 class="my-5">Nous contacter</h3>
-        <a href="tel:+" class="text-reset text-decoration-none fs-5">0321758912</a>
+        <a href="tel:+" class="text-reset text-decoration-none fs-5 mb-2">03 21 75 89 12</a>
         <a href="mailto:" class="text-reset text-decoration-none fs-5">moovy@moovy.com</a>
       </div>
       <div class="col-lg-4 d-flex flex-column  align-items-center">
